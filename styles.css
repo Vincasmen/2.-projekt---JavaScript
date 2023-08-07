@@ -1,0 +1,112 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  color: white;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  padding: 0rem 0.5rem;
+  height: 70px;
+}
+
+.nav__heading {
+  color: white;
+}
+
+.nav__heading__span {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  list-style: none;
+}
+
+nav ul li {
+  display: none;
+}
+
+nav ul li a {
+  color: white;
+}
+
+hero {
+  display: block;
+}
+
+.hero__section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/abstract-modern-tech-programming-code-screen-developer-c-programming-language-computer-script_505353-91.avif");
+  background-position: center;
+  background-size: cover;
+  min-height: calc(100vh - 70px);
+}
+
+.hero__section__paragraph {
+  align-items: center;
+}
