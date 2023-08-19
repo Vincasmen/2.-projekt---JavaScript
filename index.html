@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="querys.css" />
     <script
       src="https://kit.fontawesome.com/27b9d7ad5a.js"
       crossorigin="anonymous"
@@ -12,6 +11,8 @@
     <title>Administration tool</title>
   </head>
   <body>
+    <!-- ?--------------- MENU/HEADER SECTION -------------------- -->
+
     <header>
       <nav>
         <h1 class="nav__heading">
@@ -29,14 +30,83 @@
         </div>
       </nav>
     </header>
-    <hero class="hero__section">
-      <p class="hero__section__paragraph">
-        All administration tool for your websites at one place.
-      </p>
-    </hero>
-    <gallery></gallery>
-    <form></form>
-    <footer></footer>
+
+    <!-- ?--------------- HERO SECTION -------------------- -->
+
+    <section class="hero__section">
+      <video class="video__section" autoplay loop muted>
+        <source src="/assets/upravene video.mp4" />
+      </video>
+      <div class="intro_heading_div">
+        <h1>Administration</h1>
+        <h2>This is text about administration</h2>
+      </div>
+    </section>
+
+    <!-- ?--------------- ABOUT SECTION -------------------- -->
+
+    <section class="about__section">
+      <div class="about__section__wrapper">
+        <h2>About the project</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat aut
+          minus ipsa aperiam eum odit nihil necessitatibus quidem tempore
+          dolorum optio, tenetur laboriosam molestiae repellendus nisi autem
+          libero, a sint recusandae porro commodi? Nulla magnam provident harum
+          porro eius? Reprehenderit obcaecati reiciendis ratione ipsum
+          dignissimos cumque doloribus soluta doloremque corporis eum mollitia
+          suscipit sit totam facere quasi similique, repudiandae error. Dolores
+          sunt animi maiores nam beatae quidem atque, nostrum, iste eum,
+          perspiciatis repellat consectetur natus. Pariatur iusto tempore
+          voluptatum nostrum dolorem magni accusamus corporis tempora optio
+          numquam exercitationem quidem illo nisi eum beatae ea deserunt quam
+          veritatis excepturi, asperiores aspernatur.
+        </p>
+      </div>
+    </section>
+
+    <!-- ?--------------- GALLERY SECTION -------------------- -->
+
+    <gallery class="section__gallery">
+      <div class="images__wrapper">
+        <img src="assets/AdobeStock_554559464.jpeg" />
+        <img src="assets/AdobeStock_554559501.jpeg" />
+        <img src="assets/AdobeStock_554559528.jpeg" />
+      </div>
+    </gallery>
+
+    <!-- ?--------------- FORM SECTION -------------------- -->
+
+    <form class="section__form">
+      <div class="div__form">
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" /><br />
+        <label for="passw1">Password:</label><br />
+        <input type="password" id="passw1" name="passw1" /><br />
+        <label for="passw2">Password again:</label><br />
+        <input type="password" id="passw2" name="passw2" /><br />
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+
+    <!-- ?--------------- FOOTER SECTION -------------------- -->
+
+    <section class="section__footer">
+      <a
+        class="footer-anchor"
+        rel="noreferrer noopener"
+        target="_blank"
+        href="https://github.com/Vincasmen"
+        >Designed & Built with
+        <span class="footer_heart"> <i class="fa-solid fa-heart"></i></span>
+        by Jan Vincourek
+      </a>
+    </section>
+
+    <!-- ?--------------- SCRIPT SECTION -------------------- -->
+
     <script src="scrypt.js"></script>
   </body>
 </html>
