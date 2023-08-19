@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="query.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
       src="https://kit.fontawesome.com/27b9d7ad5a.js"
       crossorigin="anonymous"
@@ -14,29 +17,30 @@
     <!-- ?--------------- MENU/HEADER SECTION -------------------- -->
 
     <header>
+      <div class="logo__wrapper">
+        <img src="assets/AdobeStock_498147711_edited.jpg" alt="" />
+      </div>
       <nav>
-        <h1 class="nav__heading">
-          A<span class="nav__heading__span">dministration</span>
-        </h1>
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Gallery</a></li>
-          <li><a href="">From</a></li>
         </ul>
-        <div>
-          <i class="fas fa-bars"></i>
-          <!-- <i class="fas fa-times"></i> -->
-        </div>
       </nav>
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+        <!-- <i class="fas fa-times"></i> -->
+      </div>
     </header>
 
     <!-- ?--------------- HERO SECTION -------------------- -->
 
     <section class="hero__section">
-      <video class="video__section" autoplay loop muted>
-        <source src="/assets/upravene video.mp4" />
-      </video>
+      <div class="mask">
+        <video class="video__section" autoplay loop muted>
+          <source src="/assets/upravene video.mp4" />
+        </video>
+      </div>
       <div class="intro_heading_div">
         <h1>Administration</h1>
         <h2>This is text about administration</h2>
@@ -70,7 +74,11 @@
     <gallery class="section__gallery">
       <div class="images__wrapper">
         <img src="assets/AdobeStock_554559464.jpeg" />
+      </div>
+      <div class="images__wrapper">
         <img src="assets/AdobeStock_554559501.jpeg" />
+      </div>
+      <div class="images__wrapper">
         <img src="assets/AdobeStock_554559528.jpeg" />
       </div>
     </gallery>
@@ -87,7 +95,7 @@
         <input type="password" id="passw1" name="passw1" /><br />
         <label for="passw2">Password again:</label><br />
         <input type="password" id="passw2" name="passw2" /><br />
-        <input type="submit" value="Submit" />
+        <input type="submit" id="submitBtn" value="Submit" />
       </div>
     </form>
 
