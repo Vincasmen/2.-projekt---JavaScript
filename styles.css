@@ -62,11 +62,13 @@ h6 {
   isolation: isolate;
 }
 
+/* ?--------------- MENU/HEADER SECTION -------------------- */
+
 nav {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(21, 21, 21);
   align-items: center;
   padding: 0rem 0.5rem;
   height: 70px;
@@ -88,25 +90,86 @@ nav ul {
 }
 
 nav ul li {
-  display: none;
+  /* display: none; */
 }
 
 nav ul li a {
   color: white;
 }
 
-hero {
-  display: block;
+/* ?--------------- HERO SECTION -------------------- */
+
+.video__section {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
-.hero__section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("assets/abstract-modern-tech-programming-code-screen-developer-c-programming-language-computer-script_505353-91.avif");
-  background-position: center;
-  background-size: cover;
-  min-height: calc(100vh - 70px);
+.intro_heading_div {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
 }
 
-.hero__section__paragraph {
+/* ?--------------- ABOUT SECTION -------------------- */
+
+section.about__section {
+  padding: 3rem;
+  background-color: rgb(219, 43, 57);
+}
+
+/* ?--------------- GALLERY SECTION -------------------- */
+
+.section__gallery {
+  margin: 0 auto;
+}
+
+.images__wrapper {
+  width: 96vw;
+  background-color: rgb(219, 43, 57);
+}
+
+.section__gallery img {
+  border: 1px solid rgb(219, 43, 57);
+  border-radius: 5px;
+}
+
+/* ?--------------- FORM SECTION -------------------- */
+
+.section__form {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: rgb(219, 43, 57);
+  color: white;
+  padding: 3rem;
+}
+
+.div__form {
+  align-items: center;
+}
+
+/* ?--------------- FOOTER SECTION -------------------- */
+
+.section__footer {
+  text-align: center;
+  padding: 1rem 0rem;
+  background-color: rgb(241, 211, 2);
+}
+
+.footer_heart {
+  color: crimson;
 }
