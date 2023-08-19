@@ -21,6 +21,7 @@ body {
   color: white;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: "Poppins", sans-serif;
 }
 /*
   5. Improve media defaults
@@ -64,44 +65,53 @@ h6 {
 
 /* ?--------------- MENU/HEADER SECTION -------------------- */
 
-nav {
+header {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
-  background-color: rgb(21, 21, 21);
   align-items: center;
-  padding: 0rem 0.5rem;
+  background-color: rgb(21, 21, 21);
   height: 70px;
 }
 
-.nav__heading {
+.logo__wrapper {
+  flex-grow: 1;
+}
+
+.logo__wrapper img {
+  width: 100px;
+  margin-left: 20px;
+}
+
+nav {
+  margin-right: 30px;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
   color: white;
 }
 
-.nav__heading__span {
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-icon {
   display: none;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  color: white;
-  list-style: none;
-}
-
-nav ul li {
-  /* display: none; */
-}
-
-nav ul li a {
-  color: white;
+  margin-right: 30px;
 }
 
 /* ?--------------- HERO SECTION -------------------- */
 
+.mask {
+  background-color: rgba(0, 0, 0, 0.642);
+}
+
 .video__section {
   width: 100vw;
-  height: 100vh;
+  min-height: calc(100vh - 70px);
   object-fit: cover;
   position: relative;
   left: 0;
@@ -112,6 +122,7 @@ nav ul li a {
 }
 
 .intro_heading_div {
+  border-radius: 15px;
   color: rgb(255, 255, 255);
   font-weight: bold;
   position: absolute;
@@ -127,8 +138,18 @@ nav ul li a {
 /* ?--------------- ABOUT SECTION -------------------- */
 
 section.about__section {
-  padding: 3rem;
+  text-align: center;
+  padding: 1rem;
   background-color: rgb(219, 43, 57);
+}
+
+section h2 {
+  text-align: center;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+section p {
+  font-size: 12px;
 }
 
 /* ?--------------- GALLERY SECTION -------------------- */
@@ -138,11 +159,14 @@ section.about__section {
 }
 
 .images__wrapper {
-  width: 96vw;
+  display: block;
   background-color: rgb(219, 43, 57);
+  padding: 1rem;
 }
 
 .section__gallery img {
+  margin: 0 auto;
+  /* width: 90%; */
   border: 1px solid rgb(219, 43, 57);
   border-radius: 5px;
 }
@@ -151,7 +175,6 @@ section.about__section {
 
 .section__form {
   display: flex;
-  align-items: center;
   justify-content: center;
   background-color: rgb(219, 43, 57);
   color: white;
@@ -160,6 +183,22 @@ section.about__section {
 
 .div__form {
   align-items: center;
+}
+
+form input {
+  margin: 5px 0px;
+  text-align: center;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+}
+
+#submitBtn {
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 /* ?--------------- FOOTER SECTION -------------------- */
