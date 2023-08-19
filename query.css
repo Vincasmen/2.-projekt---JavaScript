@@ -44,11 +44,13 @@
   }
 
   .images__wrapper {
+    flex-basis: 5rem;
+    flex-grow: 0;
+  }
+
+  .section__gallery img {
     object-fit: cover;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 4rem;
+    border-radius: 10px;
   }
 
   form input {
@@ -61,17 +63,30 @@
     padding: 2rem 13rem;
   }
 
-  .images__wrapper {
+  .section__gallery {
     display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    padding: 1rem 13rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .images__wrapper {
+    flex-basis: 30rem;
   }
 
   .section__gallery img {
-    margin: 0 auto;
-    width: 15rem;
-    border: 1px solid rgb(219, 43, 57);
-    border-radius: 5px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
+
+/* !---- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ----- */
+/* TODO !!!!!!!!!!! FINISH WRAPING IMAGES !!!!!!!!!!!!!--- */
+/* !---- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ----- */
+
+@media (max-width: 1390px) {
+  .section__gallery {
+    flex-wrap: nowrap;
   }
 }

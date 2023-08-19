@@ -156,9 +156,12 @@ section p {
 
 .section__gallery {
   margin: 0 auto;
+  background-color: rgb(219, 43, 57);
 }
 
 .images__wrapper {
+  width: 100%;
+  object-fit: cover;
   display: block;
   background-color: rgb(219, 43, 57);
   padding: 1rem;
