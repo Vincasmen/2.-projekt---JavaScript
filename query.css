@@ -39,8 +39,13 @@
 /* !---- TABLET VIEW min-width: 768px ----------- */
 
 @media (min-width: 768px) {
-  section.about__section {
-    padding: 1rem 4rem;
+  .intro_heading_div {
+    width: 60vw;
+  }
+
+  .about__section__wrapper {
+    width: 60vw;
+    margin: 0 auto;
   }
 
   .gallery_wrapper {
@@ -48,7 +53,10 @@
   }
 
   .images__wrapper {
-  }
+    border-radius: 10px;
+background: #151515;
+box-shadow:  9px 9px 18px #080808,
+             -9px -9px 18px #222222;
 
   .section__gallery img {
     border-radius: 10px;
@@ -62,11 +70,8 @@
 /* !---- MONITOR VIEW min-width: 1024px ----------- */
 
 @media (min-width: 1024px) {
-  section.about__section {
-    padding: 2rem 13rem;
-  }
-
-  .section__gallery {
+  .about__section__wrapper {
+    width: 30rem;
   }
 
   .gallery_wrapper {
@@ -85,19 +90,14 @@
   }
 
   .section__gallery img {
-    flex-basis: 2rem;
     flex-shrink: 1;
     flex-grow: 1;
     border-radius: 20px;
   }
 }
 
-/* !---- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ----- */
-/* TODO !!!!!!!!!!! FINISH WRAPING 1024++ !!!!!!!!!--- */
-/* !---- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ----- */
-
-@media (max-width: 1390px) {
-  .section__gallery {
-    flex-wrap: nowrap;
+@media (min-width: 1440px) {
+  .about__section__wrapper {
+    width: 40rem;
   }
 }
