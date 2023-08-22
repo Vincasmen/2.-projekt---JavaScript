@@ -250,19 +250,21 @@ section p {
 /* ?--------------- FORM SECTION -------------------- */
 
 .section__form {
-  display: flex;
-  justify-content: center;
   background-color: rgb(219, 43, 57);
   color: white;
-  padding: 3rem;
+  padding: 2rem 0rem;
 }
 
 .div__form {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 form input {
-  margin: 5px 0px;
+  width: 85vw;
   text-align: center;
   padding: 5px;
   background-color: transparent;
@@ -274,7 +276,8 @@ form input {
 #submitBtn {
   margin: 0 auto;
   justify-content: center;
-  margin-top: 1rem;
+  width: fit-content;
+  /* margin-top: 1rem; */
 }
 
 /* ?--------------- FOOTER SECTION -------------------- */
