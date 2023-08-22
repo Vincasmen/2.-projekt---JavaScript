@@ -43,8 +43,17 @@
     width: 60vw;
   }
 
-  .about__section__wrapper {
+  .about__section__wrapper2 {
+    border-radius: 22px;
+background: #db2b39;
+box-shadow:  12px 12px 16px #76171f,-8px -8px 16px #ff3f53;
     width: 60vw;
+    margin: 0 auto;
+
+  }
+
+  .about__section__wrapper {
+    /* width: 60vw; */
     margin: 0 auto;
   }
 
@@ -54,9 +63,8 @@
 
   .images__wrapper {
     border-radius: 10px;
-background: #151515;
-box-shadow:  9px 9px 18px #080808,
-             -9px -9px 18px #222222;
+    background: #151515;
+    box-shadow:  9px 9px 18px #080808,-9px -9px 18px #222222;
 
   .section__gallery img {
     border-radius: 10px;
