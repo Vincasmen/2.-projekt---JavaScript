@@ -141,6 +141,13 @@ section.about__section {
   text-align: center;
   padding: 1rem;
   background-color: rgb(219, 43, 57);
+  color: rgb(255, 255, 255);
+}
+
+.about__section__wrapper {
+  border: 3px solid rgb(252, 252, 252);
+  border-radius: 15px;
+  padding: 2rem 0rem;
 }
 
 section h2 {
@@ -149,13 +156,14 @@ section h2 {
 }
 
 section p {
-  font-size: 12px;
+  font-size: clamp(15px, 2vw, 2.5rem);
 }
 
 /* ?--------------- GALLERY SECTION -------------------- */
 
 .section__gallery {
-  background-color: rgb(219, 43, 57);
+  background-color: rgb(21, 21, 21);
+  padding: 2rem 0rem;
 }
 
 .gallery_wrapper {
@@ -164,13 +172,13 @@ section p {
 }
 
 .images__wrapper {
+  margin: 0.5rem;
 }
 
 .section__gallery img {
   object-fit: cover;
   border: 1px solid rgb(219, 43, 57);
   border-radius: 5px;
-  margin: 0;
 }
 
 /* ?--------------- FORM SECTION -------------------- */
@@ -208,7 +216,7 @@ form input {
 .section__footer {
   text-align: center;
   padding: 1rem 0rem;
-  background-color: rgb(241, 211, 2);
+  background-color: rgb(21, 21, 21);
 }
 
 .footer_heart {
