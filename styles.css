@@ -297,3 +297,24 @@ form input {
 .footer_heart {
   color: crimson;
 }
+
+/* ?--------------- SCROLL TO TOP BUTTON -------------- */
+
+#scroll-btn {
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: #7070709c;
+  position: fixed;
+  bottom: 0.6rem;
+  right: 0.6rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font: bold 20px monospace;
+  transition: opacity 0.5s, transform 0.5s;
+}
+#scroll-btn.show {
+  opacity: 1;
+  transition: opacity 1s, transform 1s;
+}
