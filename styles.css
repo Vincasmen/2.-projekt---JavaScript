@@ -227,24 +227,30 @@ section p {
 
 /* ?--------------- GALLERY SECTION -------------------- */
 
+.swiper {
+  width: 90vw;
+}
+
 .section__gallery {
   background-color: rgb(21, 21, 21);
   padding: 2rem 0rem;
 }
 
-.gallery_wrapper {
+/* .gallery_wrapper {
   margin: 0 auto;
   width: 90vw;
-}
+} */
 
-.images__wrapper {
+/* .images__wrapper {
   margin: 0.5rem;
-}
+} */
 
 .section__gallery img {
   object-fit: cover;
-  border: 1px solid rgb(219, 43, 57);
+  border: 2px solid rgb(219, 43, 57);
   border-radius: 5px;
+  height: 60vh;
+  width: 100vw;
 }
 
 /* ?--------------- FORM SECTION -------------------- */
