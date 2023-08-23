@@ -1,6 +1,13 @@
 const menuIcon = document.querySelector(".menu-icon");
 const menuList = document.querySelector("nav");
 const hamburgerIcon = document.querySelector(".fa-bars");
+const scrollBtn = document.createElement("button");
+const nav = document.querySelector("#nav");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) nav.style.background = "rgb(21, 21, 21, 0.80)";
+  else nav.style.background = "rgb(21, 21, 21)";
+});
 
 menuIcon.addEventListener("click", () => {
   hamburgerIcon.classList.toggle("fa-xmark");
@@ -8,7 +15,8 @@ menuIcon.addEventListener("click", () => {
     menuList.style.display === "block" ? "none" : "block";
 });
 
-const scrollBtn = document.createElement("button");
+/* ---------- SCROLL TO TOP BUTTON ------------ */
+
 const scrollTop = function () {
   scrollBtn.innerHTML = "&uarr;";
   scrollBtn.setAttribute("id", "scroll-btn");

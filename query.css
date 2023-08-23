@@ -2,11 +2,7 @@
 
 @media (max-width: 600px) {
   header {
-    /* position: relative; */
     position: fixed;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
   }
 
   header nav {

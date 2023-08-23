@@ -70,10 +70,10 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgb(21, 21, 21);
+  background-color: rgba(21, 21, 21);
   height: 70px;
   z-index: 99;
-  width: 100%;
+  width: 100vw;
 }
 
 .logo__wrapper {
