@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="query.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script
       src="https://kit.fontawesome.com/27b9d7ad5a.js"
       crossorigin="anonymous"
@@ -70,19 +75,35 @@
     <!-- ?--------------- GALLERY SECTION -------------------- -->
 
     <section class="section__gallery">
-      <div class="gallery_wrapper">
-        <div class="images__wrapper">
-          <img src="assets/AdobeStock_554559464.jpeg" />
-        </div>
-        <div class="images__wrapper">
-          <img src="assets/AdobeStock_554559501.jpeg" />
-        </div>
-        <div class="images__wrapper">
-          <img src="assets/AdobeStock_554559528.jpeg" />
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="assets/AdobeStock_554559464.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/AdobeStock_554559501.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/AdobeStock_554559528.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/AdobeStock_557287107.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/AdobeStock_602982590.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/AdobeStock_568461813.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/AdobeStock_613297377.jpeg" />
+          </div>
         </div>
       </div>
     </section>
-
     <!-- ?--------------- FORM SECTION -------------------- -->
 
     <form class="section__form">
