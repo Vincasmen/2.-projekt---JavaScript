@@ -239,21 +239,21 @@ section p {
   padding: 2rem 0rem;
 }
 
-/* .gallery_wrapper {
-  margin: 0 auto;
-  width: 90vw;
-} */
-
-/* .images__wrapper {
-  margin: 0.5rem;
-} */
-
 .section__gallery img {
   object-fit: cover;
   border: 2px solid rgb(219, 43, 57);
   border-radius: 5px;
   height: 60vh;
   width: 100vw;
+}
+
+.swiper-pagination {
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  /* top: 5px; */
+  opacity: 0.8;
+  background-color: rgb(253, 253, 253);
 }
 
 /* ?--------------- FORM SECTION -------------------- */
