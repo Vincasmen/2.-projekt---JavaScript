@@ -4,6 +4,11 @@ const hamburgerIcon = document.querySelector(".fa-bars");
 const scrollBtn = document.createElement("button");
 const header = document.querySelector("#header");
 const nav = document.querySelector("#nav");
+const fName = document.querySelector("#fname");
+const lName = document.querySelector("#lname");
+const pass1 = document.querySelector("#passw1");
+const pass2 = document.querySelector("#passw2");
+const submitBtn = document.querySelector("#submitBtn");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100)
@@ -88,3 +93,8 @@ const swiper = new Swiper(".swiper", {
 });
 
 /* -------------------- FORM ---------------------- */
+
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("clicked");
+});
