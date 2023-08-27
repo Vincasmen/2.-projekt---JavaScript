@@ -251,11 +251,7 @@ section p {
 
 .swiper-slide-active img:hover {
   transition: 0.7s;
-  /* transform: scale(1.1); */
   opacity: 1;
-
-  /* height: 80vh; */
-  /* transition: 0.5s ease all; */
 }
 
 .swiper-slide-shadow-left.swiper-slide-shadow-coverflow {
@@ -301,7 +297,7 @@ form input {
   margin: 0 auto;
   justify-content: center;
   width: fit-content;
-  /* margin-top: 1rem; */
+  cursor: pointer;
 }
 
 /* ?--------------- FOOTER SECTION -------------------- */
