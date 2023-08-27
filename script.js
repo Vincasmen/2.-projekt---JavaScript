@@ -55,7 +55,6 @@ const swiper = new Swiper(".swiper", {
     stretch: 0,
     depth: 100,
     modifier: 1,
-    slideShadows: true,
   },
   breakpoints: {
     // when window width is >= 320px
