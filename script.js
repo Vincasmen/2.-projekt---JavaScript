@@ -4,17 +4,14 @@ const hamburgerIcon = document.querySelector(".fa-bars");
 const scrollBtn = document.createElement("button");
 const header = document.querySelector("#header");
 const nav = document.querySelector("#nav");
-const ul = document.querySelector("#ul");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100)
     (header.style.background = "rgb(21, 21, 21, 0.80)"),
-      (nav.style.background = "rgb(21, 21, 21, 0.80)"),
-      (ul.style.background = "rgb(21, 21, 21, 0.80)");
+      (nav.style.background = "rgb(21, 21, 21, 0.80)");
   else
     (header.style.background = "rgb(21, 21, 21)"),
-      (nav.style.background = "rgb(21, 21, 21)"),
-      (ul.style.background = "rgb(21, 21, 21)");
+      (nav.style.background = "rgb(21, 21, 21)");
 });
 
 menuIcon.addEventListener("click", () => {
@@ -89,3 +86,5 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+/* -------------------- FORM ---------------------- */

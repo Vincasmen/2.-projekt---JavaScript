@@ -81,6 +81,11 @@ header {
 }
 
 .logo__wrapper img {
+  color: white;
+  background-color: white;
+}
+
+.logo__wrapper img {
   width: 100px;
   margin-left: 20px;
 }
@@ -305,11 +310,11 @@ form input {
 .section__footer {
   text-align: center;
   padding: 1rem 0rem;
-  background-color: rgb(21, 21, 21);
+  background-color: rgb(0, 0, 0);
 }
 
 .footer_heart {
-  color: crimson;
+  color: rgba(255, 255, 255, 0);
 }
 
 /* ?--------------- SCROLL TO TOP BUTTON -------------- */

@@ -1,6 +1,6 @@
-/* !---- BURGER MENU SECTION max-width: 600px ---- */
+/* !---- BURGER MENU SECTION max-width: 599px ---- */
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   header {
     position: fixed;
   }
@@ -10,7 +10,6 @@
     position: absolute;
     top: 70px;
     left: 0;
-    background-color: rgb(21, 21, 21);
     width: 100%;
   }
 
@@ -33,6 +32,14 @@
 @media (min-width: 600px) {
   header nav {
     display: block !important;
+    background-color: transparent !important;
+  }
+  nav ul {
+    background-color: transparent;
+  }
+
+  nav li {
+    background-color: transparent;
   }
 }
 
