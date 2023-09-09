@@ -122,23 +122,31 @@
           onblur="this.placeholder = 'Nickname'"
         />
         <!-- <label for="passw1">Password:</label> -->
-        <input
-          type="password"
-          placeholder="Password"
-          id="passw1"
-          name="passw1"
-          onfocus="this.placeholder = ''"
-          onblur="this.placeholder = 'Password'"
-        />
+        <div class="password1_container">
+          <input
+            type="password"
+            placeholder="Password"
+            id="passw1"
+            name="passw1"
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Password'"
+          />
+          <i class="fa-regular fa-eye"></i>
+          <i class="fa-regular fa-eye-slash"></i>
+        </div>
         <!-- <label for="passw2">Password again:</label> -->
-        <input
-          type="password"
-          placeholder="Password again"
-          id="passw2"
-          name="passw2"
-          onfocus="this.placeholder = ''"
-          onblur="this.placeholder = 'Password again'"
-        />
+        <div class="password2_container">
+          <input
+            type="password"
+            placeholder="Password again"
+            id="passw2"
+            name="passw2"
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Password again'"
+          />
+          <i class="fa-regular fa-eye"></i>
+          <i class="fa-regular fa-eye-slash"></i>
+        </div>
         <input type="submit" id="submitBtn" value="Submit" />
       </div>
     </form>

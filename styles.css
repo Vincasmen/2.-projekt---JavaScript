@@ -303,12 +303,33 @@ form input {
   width: 85vw;
   text-align: center;
   padding: 5px;
-  border-radius: 50px;
+  border-radius: 10px;
   background: #db2b39;
   box-shadow: inset 6px 6px 12px #af222e, inset -6px -6px 12px #ff3444;
   border: none;
   outline: none;
   color: white;
+}
+
+.password1_container {
+  position: relative;
+}
+.password2_container {
+  position: relative;
+}
+
+.fa-eye {
+  position: absolute;
+  right: 4%;
+  top: 28%;
+  cursor: pointer;
+}
+.fa-eye-slash {
+  display: none;
+  position: absolute;
+  right: 4%;
+  top: 28%;
+  cursor: pointer;
 }
 
 input::placeholder {
