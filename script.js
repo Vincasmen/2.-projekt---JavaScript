@@ -97,19 +97,19 @@ const swiper = new Swiper(".swiper", {
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   console.log("clicked");
-  fName.value;
-  lName.value;
-  pass1.value;
-  pass2.value;
+  // fName.value;
+  // lName.value;
+  // pass1.value;
+  // pass2.value;
 
   /* !--------------- NEED TO FIXT THE PASS CHECK -------------- */
 
-  const ffName = "text";
+  const ffName = fName.value;
   if (typeof ffName !== "string") {
     window.alert("Please re-enter your name");
     // we use strict validation ( !== ) because it's a good practice.
   } else if (pass1 !== pass2) {
     window.alert("Passwords do not match!");
   }
-  console.log(lName.value);
+  console.log(typeof fName.value);
 });
