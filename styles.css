@@ -11,6 +11,7 @@
 */
 * {
   margin: 0;
+  scroll-behavior: smooth;
 }
 /*
   Typographic tweaks!
@@ -280,12 +281,17 @@ section p {
   padding: 2rem 0rem;
 }
 
+.section__form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 .div__form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 
 form input {
@@ -296,6 +302,11 @@ form input {
   border: 1px solid white;
   border-radius: 8px;
   color: white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.685);
+  text-align: left;
 }
 
 #submitBtn {
