@@ -34,9 +34,10 @@
       </div>
       <nav id="nav">
         <ul id="ul">
-          <li><a id="li" href="">Home</a></li>
-          <li><a id="li" href="">About</a></li>
-          <li><a id="li" href="">Gallery</a></li>
+          <li><a id="li" href="#hero__section">Home</a></li>
+          <li><a id="li" href="#about__section">About</a></li>
+          <li><a id="li" href="#section__gallery">Gallery</a></li>
+          <li><a id="li" href="#section__form">Form</a></li>
         </ul>
       </nav>
       <div class="menu-icon">
@@ -47,7 +48,7 @@
 
     <!-- ?--------------- HERO SECTION -------------------- -->
 
-    <section class="hero__section">
+    <section id="hero__section" class="hero__section">
       <div class="mask">
         <video class="video__section" autoplay loop muted>
           <source src="/assets/upravene video.mp4" />
@@ -61,7 +62,7 @@
 
     <!-- ?--------------- ABOUT SECTION -------------------- -->
 
-    <section class="about__section">
+    <section id="about__section" class="about__section">
       <div class="about__section__wrapper2">
         <div class="about__section__wrapper">
           <h2>About the project</h2>
@@ -75,7 +76,7 @@
 
     <!-- ?--------------- GALLERY SECTION -------------------- -->
 
-    <section class="section__gallery">
+    <section id="section__gallery" class="section__gallery">
       <!-- Slider main container -->
       <div class="swiper">
         <!-- Additional required wrapper -->
@@ -108,25 +109,35 @@
     </section>
     <!-- ?--------------- FORM SECTION -------------------- -->
 
-    <form class="section__form">
-      <h3>Log-in form</h3>
+    <form id="section__form" class="section__form">
+      <h2>Log-in form</h2>
       <div class="div__form">
-        <label for="fname">Nickname:</label>
-        <input type="text" placeholder="First name" id="fname" name="fname" />
-
-        <label for="passw1">Password:</label>
+        <!-- <label for="fname">Nickname:</label> -->
+        <input
+          type="text"
+          placeholder="Nickname"
+          id="fname"
+          name="fname"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Nickname'"
+        />
+        <!-- <label for="passw1">Password:</label> -->
         <input
           type="password"
           placeholder="Password"
           id="passw1"
           name="passw1"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Password'"
         />
-        <label for="passw2">Password again:</label>
+        <!-- <label for="passw2">Password again:</label> -->
         <input
           type="password"
           placeholder="Password again"
           id="passw2"
           name="passw2"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Password again'"
         />
         <input type="submit" id="submitBtn" value="Submit" />
       </div>
