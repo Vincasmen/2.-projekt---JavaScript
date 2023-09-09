@@ -158,7 +158,12 @@ header {
 
 nav {
   margin-right: 30px;
+  background-color: rgb(21, 21, 21);
 }
+
+/* ul {
+  background-color: rgb(168, 8, 8);
+} */
 
 nav li {
   display: inline-block;
