@@ -4,11 +4,31 @@ const hamburgerIcon = document.querySelector(".fa-bars");
 const scrollBtn = document.createElement("button");
 const header = document.querySelector("#header");
 const nav = document.querySelector("#nav");
+const list = document.querySelectorAll("a");
 const fName = document.querySelector("#fname");
 const lName = document.querySelector("#lname");
 const pass1 = document.querySelector("#passw1");
 const pass2 = document.querySelector("#passw2");
 const submitBtn = document.querySelector("#submitBtn");
+const slider = document.querySelector(".checkbox");
+
+/* ---------- DARK/LIGHT MODE ------------ */
+
+function change() {
+  for (let i = 0; i < list.length; i++) {
+    if (slider.checked) {
+      header.classList.add("light");
+      list[i].classList.add("light");
+    } else {
+      header.classList.remove("light");
+      list[i].classList.remove("light");
+    }
+  }
+}
+
+slider.addEventListener("change", change);
+
+/* ---------- NAV BAR COLOR TRANSITION ------------ */
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100)
