@@ -212,7 +212,7 @@ a {
 
 /* ?--------------- ABOUT SECTION -------------------- */
 
-section.about__section {
+.about__section {
   text-align: center;
   padding: 1rem;
   background-color: rgb(219, 43, 57);
@@ -248,7 +248,6 @@ section p {
 
 .section__gallery img {
   object-fit: cover;
-  border: 2px solid rgb(219, 43, 57);
   border-radius: 5px;
   height: 60vh;
   width: 100vw;

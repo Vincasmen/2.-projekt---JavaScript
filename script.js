@@ -11,6 +11,10 @@ const pass1 = document.querySelector("#passw1");
 const pass2 = document.querySelector("#passw2");
 const submitBtn = document.querySelector("#submitBtn");
 const slider = document.querySelector(".checkbox");
+const aboutSection = document.querySelector(".about__section");
+const aboutSectionWrapper = document.querySelector(".about__section__wrapper2");
+const formSection = document.querySelector(".section__form");
+const formDiv = document.querySelector(".div__form");
 
 /* ---------- DARK/LIGHT MODE ------------ */
 
@@ -18,9 +22,19 @@ function change() {
   for (let i = 0; i < list.length; i++) {
     if (slider.checked) {
       header.classList.add("light");
+      nav.classList.add("light");
+      aboutSection.classList.add("light");
+      aboutSectionWrapper.classList.add("light-neumorphism");
+      formSection.classList.add("light");
+      formDiv.classList.add("light-neumorphism");
       list[i].classList.add("light");
     } else {
       header.classList.remove("light");
+      nav.classList.remove("light");
+      aboutSection.classList.remove("light");
+      aboutSectionWrapper.classList.remove("light-neumorphism");
+      formSection.classList.remove("light");
+      formDiv.classList.remove("light-neumorphism");
       list[i].classList.remove("light");
     }
   }
@@ -31,7 +45,7 @@ slider.addEventListener("change", change);
 /* ---------- NAV BAR COLOR TRANSITION ------------ */
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 100)
+  if (window.scrollY > 100 && slider.unchecked)
     (header.style.background = "rgb(21, 21, 21, 0.80)"),
       (nav.style.background = "rgb(21, 21, 21, 0.80)");
   else
