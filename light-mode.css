@@ -17,3 +17,7 @@
   background: #e0e0e0;
   box-shadow: inset 6px 6px 12px #bebebe, inset -6px -6px 12px #ffffff;
 }
+
+.light-footer_heart {
+  color: black;
+}
