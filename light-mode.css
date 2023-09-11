@@ -10,3 +10,9 @@
   background: #e0e0e0;
   box-shadow: 12px 12px 16px #bebebe, -8px -8px 16px #ffffff;
 }
+.light-neumorphism-form {
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: inset 6px 6px 12px #bebebe, inset -6px -6px 12px #ffffff;
+  color: black;
+}

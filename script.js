@@ -27,6 +27,9 @@ function change() {
       aboutSectionWrapper.classList.add("light-neumorphism");
       formSection.classList.add("light");
       formDiv.classList.add("light-neumorphism");
+      fName.classList.add("light-neumorphism-form");
+      pass1.classList.add("light-neumorphism-form");
+      pass2.classList.add("light-neumorphism-form");
       list[i].classList.add("light");
     } else {
       header.classList.remove("light");
@@ -35,6 +38,9 @@ function change() {
       aboutSectionWrapper.classList.remove("light-neumorphism");
       formSection.classList.remove("light");
       formDiv.classList.remove("light-neumorphism");
+      fName.classList.remove("light-neumorphism-form");
+      pass1.classList.remove("light-neumorphism-form");
+      pass2.classList.remove("light-neumorphism-form");
       list[i].classList.remove("light");
     }
   }
