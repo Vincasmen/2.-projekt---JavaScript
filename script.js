@@ -15,6 +15,8 @@ const aboutSection = document.querySelector(".about__section");
 const aboutSectionWrapper = document.querySelector(".about__section__wrapper2");
 const formSection = document.querySelector(".section__form");
 const formDiv = document.querySelector(".div__form");
+const footerSection = document.querySelector(".section__footer");
+const footerHeart = document.querySelector(".footer_heart");
 
 /* ---------- DARK/LIGHT MODE ------------ */
 
@@ -35,6 +37,8 @@ slider.addEventListener("change", () => {
   pass1.classList.toggle("light-neumorphism-form");
   pass2.classList.toggle("light-neumorphism-form");
   submitBtn.classList.toggle("light-neumorphism");
+  footerSection.classList.toggle("light-neumorphism");
+  footerHeart.classList.toggle("light-footer_heart");
   menuLoop();
 });
 
