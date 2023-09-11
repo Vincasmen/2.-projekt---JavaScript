@@ -18,32 +18,40 @@ const formDiv = document.querySelector(".div__form");
 
 /* ---------- DARK/LIGHT MODE ------------ */
 
-function change() {
+const menuLoop = () => {
   for (let i = 0; i < list.length; i++) {
-    if (slider.checked) {
-      header.classList.add("light");
-      nav.classList.add("light");
-      aboutSection.classList.add("light");
-      aboutSectionWrapper.classList.add("light-neumorphism");
-      formSection.classList.add("light");
-      formDiv.classList.add("light-neumorphism");
-      fName.classList.add("light-neumorphism-form");
-      pass1.classList.add("light-neumorphism-form");
-      pass2.classList.add("light-neumorphism-form");
-      list[i].classList.add("light");
-    } else {
-      header.classList.remove("light");
-      nav.classList.remove("light");
-      aboutSection.classList.remove("light");
-      aboutSectionWrapper.classList.remove("light-neumorphism");
-      formSection.classList.remove("light");
-      formDiv.classList.remove("light-neumorphism");
-      fName.classList.remove("light-neumorphism-form");
-      pass1.classList.remove("light-neumorphism-form");
-      pass2.classList.remove("light-neumorphism-form");
-      list[i].classList.remove("light");
-    }
+    list[i].classList.toggle("light");
   }
+};
+
+function change() {
+  // for (let i = 0; i < list.length; i++) {
+  if (slider.checked) {
+    header.classList.add("light");
+    nav.classList.add("light");
+    aboutSection.classList.add("light");
+    aboutSectionWrapper.classList.add("light-neumorphism");
+    formSection.classList.add("light");
+    formDiv.classList.add("light-neumorphism");
+    fName.classList.add("light-neumorphism-form");
+    pass1.classList.add("light-neumorphism-form");
+    pass2.classList.add("light-neumorphism-form");
+    submitBtn.classList.add("light-neumorphism");
+    menuLoop();
+  } else {
+    header.classList.remove("light");
+    nav.classList.remove("light");
+    aboutSection.classList.remove("light");
+    aboutSectionWrapper.classList.remove("light-neumorphism");
+    formSection.classList.remove("light");
+    formDiv.classList.remove("light-neumorphism");
+    fName.classList.remove("light-neumorphism-form");
+    pass1.classList.remove("light-neumorphism-form");
+    pass2.classList.remove("light-neumorphism-form");
+    submitBtn.classList.remove("light-neumorphism");
+    menuLoop();
+  }
+  // }
 }
 
 slider.addEventListener("change", change);
