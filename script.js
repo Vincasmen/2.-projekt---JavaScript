@@ -17,6 +17,7 @@ const formSection = document.querySelector(".section__form");
 const formDiv = document.querySelector(".div__form");
 const footerSection = document.querySelector(".section__footer");
 const footerHeart = document.querySelector(".footer_heart");
+const passEye = document.querySelectorAll("#passEye");
 
 /* ---------- DARK/LIGHT MODE ------------ */
 
@@ -127,6 +128,17 @@ const swiper = new Swiper(".swiper", {
 });
 
 /* -------------------- FORM ---------------------- */
+for (let i = 0; i < passEye.length; i++) {
+  passEye[i].addEventListener("click", () => {
+    // passEye[i].style.display = "none";
+    pass1.toggleAttribute("type");
+    // pass1.type = "password" ? "text" : "password";
+    // pass1.setAttribute.type = "password";
+    // pass2.type = "password" ? "text" : "password";
+
+    console.log("clicked");
+  });
+}
 
 pass2.addEventListener("keyup", () => {
   pass1.value === pass2.value

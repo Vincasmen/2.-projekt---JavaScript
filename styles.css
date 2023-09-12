@@ -313,6 +313,9 @@ form input {
   position: relative;
 }
 
+.fa-regular {
+  display: none;
+}
 .fa-eye {
   position: absolute;
   right: 4%;
@@ -320,11 +323,15 @@ form input {
   cursor: pointer;
 }
 .fa-eye-slash {
-  display: none;
   position: absolute;
   right: 4%;
   top: 28%;
   cursor: pointer;
+}
+
+.none {
+  display: none;
+  color: #af222e;
 }
 
 input::placeholder {
