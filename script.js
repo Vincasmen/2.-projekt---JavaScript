@@ -45,7 +45,7 @@ slider.addEventListener("change", () => {
 /* ---------- NAV BAR COLOR TRANSITION ------------ */
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 100 && slider.unchecked)
+  if (window.scrollY > 100)
     (header.style.background = "rgb(21, 21, 21, 0.80)"),
       (nav.style.background = "rgb(21, 21, 21, 0.80)");
   else
@@ -128,22 +128,14 @@ const swiper = new Swiper(".swiper", {
 
 /* -------------------- FORM ---------------------- */
 
+pass2.addEventListener("keyup", () => {
+  pass1.value === pass2.value
+    ? (pass2.style.outline = "2px solid green")
+    : (pass2.style.outline = "2px solid white");
+});
+
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
+
   console.log("clicked");
-  // fName.value;
-  // lName.value;
-  // pass1.value;
-  // pass2.value;
-
-  /* !--------------- NEED TO FIXT THE PASS CHECK -------------- */
-
-  const ffName = fName.value;
-  if (typeof ffName !== "string") {
-    window.alert("Please re-enter your name");
-    // we use strict validation ( !== ) because it's a good practice.
-  } else if (pass1 !== pass2) {
-    window.alert("Passwords do not match!");
-  }
-  console.log(typeof fName.value);
 });
