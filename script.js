@@ -60,6 +60,13 @@ menuIcon.addEventListener("click", () => {
     menuList.style.display === "block" ? "none" : "block";
 });
 
+document.addEventListener("click", (e) => {
+  if (!hamburgerIcon.contains(e.target) && !menuList.contains(e.target)) {
+    hamburgerIcon.classList.remove("fa-xmark");
+    menuList.style.display = "none";
+  }
+});
+
 /* ---------- SCROLL TO TOP BUTTON ------------ */
 
 const scrollTop = function () {
