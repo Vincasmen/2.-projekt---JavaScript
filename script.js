@@ -28,6 +28,8 @@ const menuLoop = () => {
 };
 
 slider.addEventListener("change", () => {
+    hamburgerIcon.classList.toggle("light");
+
   header.classList.toggle("light");
   nav.classList.toggle("light");
   aboutSection.classList.toggle("light");
