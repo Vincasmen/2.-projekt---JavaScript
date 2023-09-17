@@ -28,6 +28,8 @@ const menuLoop = () => {
 };
 
 slider.addEventListener("change", () => {
+  hamburgerIcon.classList.toggle("light");
+
   header.classList.toggle("light");
   nav.classList.toggle("light");
   aboutSection.classList.toggle("light");
@@ -58,6 +60,13 @@ menuIcon.addEventListener("click", () => {
   hamburgerIcon.classList.toggle("fa-xmark");
   menuList.style.display =
     menuList.style.display === "block" ? "none" : "block";
+});
+
+document.addEventListener("click", (e) => {
+  if (!hamburgerIcon.contains(e.target) && !menuList.contains(e.target)) {
+    hamburgerIcon.classList.remove("fa-xmark");
+    menuList.style.display = "none";
+  }
 });
 
 /* ---------- SCROLL TO TOP BUTTON ------------ */
@@ -130,24 +139,19 @@ const swiper = new Swiper(".swiper", {
 /* -------------------- FORM ---------------------- */
 for (let i = 0; i < passEye.length; i++) {
   passEye[i].addEventListener("click", () => {
-    // passEye[i].style.display = "none";
     pass1.toggleAttribute("type");
-    // pass1.type = "password" ? "text" : "password";
-    // pass1.setAttribute.type = "password";
-    // pass2.type = "password" ? "text" : "password";
-
     console.log("clicked");
   });
 }
 
 pass2.addEventListener("keyup", () => {
-  pass1.value === pass2.value
+  pass1.value === pass2.value && pass1.value !== ""
     ? (pass2.style.outline = "2px solid green")
     : (pass2.style.outline = "2px solid white");
 });
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
-
   console.log("clicked");
+  console.log(fName.value);
 });
