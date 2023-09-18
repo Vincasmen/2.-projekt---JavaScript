@@ -339,6 +339,16 @@ input::placeholder {
   text-align: left;
 }
 
+.input-alert {
+  display: none;
+  text-align: left;
+}
+
+.alert-paragraph {
+  color: rgb(21, 21, 21);
+  font-weight: bold;
+}
+
 .submitBtn {
   padding: 0.5rem;
   margin: 0 auto;

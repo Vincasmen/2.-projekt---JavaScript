@@ -6,7 +6,6 @@ const header = document.querySelector("#header");
 const nav = document.querySelector("#nav");
 const list = document.querySelectorAll("a");
 const fName = document.querySelector("#fname");
-const lName = document.querySelector("#lname");
 const pass1 = document.querySelector("#passw1");
 const pass2 = document.querySelector("#passw2");
 const submitBtn = document.querySelector("#submitBtn");
@@ -18,6 +17,8 @@ const formDiv = document.querySelector(".div__form");
 const footerSection = document.querySelector(".section__footer");
 const footerHeart = document.querySelector(".footer_heart");
 const passEye = document.querySelectorAll("#passEye");
+const inputAlert = document.querySelector(".input-alert");
+const paragraphAlert = document.createElement("p");
 
 /* ---------- DARK/LIGHT MODE ------------ */
 
@@ -143,6 +144,20 @@ for (let i = 0; i < passEye.length; i++) {
     console.log("clicked");
   });
 }
+const alertMessage = () => {
+  if (fName.value === "") {
+    inputAlert.classList.remove("input-alert");
+    paragraphAlert.classList.add("alert-paragraph");
+    paragraphAlert.textContent = "Fillout your nickname";
+    inputAlert.append(paragraphAlert);
+    console.log("Empty");
+  }
+  fName.addEventListener("keyup", () => {
+    if (fName.value.length > 0) {
+      inputAlert.classList.add("input-alert");
+    }
+  });
+};
 
 pass2.addEventListener("keyup", () => {
   pass1.value === pass2.value && pass1.value !== ""
@@ -158,8 +173,7 @@ const clearInput = () => {
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  fName.value === "" ? alert("Please enter") : console.log(fName.value);
-  console.log("clicked");
-  console.log(fName.value);
+  // fName.value === "" ? alert("Please enter") : console.log(fName.value);
+  alertMessage();
   clearInput();
 });
