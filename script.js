@@ -150,8 +150,16 @@ pass2.addEventListener("keyup", () => {
     : (pass2.style.outline = "2px solid white");
 });
 
+const clearInput = () => {
+  fName.value = "";
+  pass1.value = "";
+  pass2.value = "";
+};
+
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
+  fName.value === "" ? alert("Please enter") : console.log(fName.value);
   console.log("clicked");
   console.log(fName.value);
+  clearInput();
 });
