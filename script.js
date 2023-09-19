@@ -145,7 +145,7 @@ for (let i = 0; i < passEye.length; i++) {
   });
 }
 const alertMessage = () => {
-  if (fName.value === "") {
+  if (fName.value.trim() === "") {
     inputAlert.classList.remove("input-alert");
     paragraphAlert.classList.add("alert-paragraph");
     paragraphAlert.textContent = "Fillout your nickname";
@@ -153,7 +153,7 @@ const alertMessage = () => {
     console.log("Empty");
   }
   fName.addEventListener("keyup", () => {
-    if (fName.value.length > 0) {
+    if (fName.value.trim() !== "") {
       inputAlert.classList.add("input-alert");
     }
   });
