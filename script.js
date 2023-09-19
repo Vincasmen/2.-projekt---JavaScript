@@ -140,6 +140,7 @@ const swiper = new Swiper(".swiper", {
 /* -------------------- FORM ---------------------- */
 for (let i = 0; i < passEye.length; i++) {
   passEye[i].addEventListener("click", () => {
+    passEye[i].classList.toggle("fa-eye");
     pass1.toggleAttribute("type");
     console.log("clicked");
   });
@@ -173,7 +174,6 @@ const clearInput = () => {
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  // fName.value === "" ? alert("Please enter") : console.log(fName.value);
   alertMessage();
   clearInput();
 });
