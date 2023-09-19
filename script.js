@@ -16,7 +16,10 @@ const formSection = document.querySelector(".section__form");
 const formDiv = document.querySelector(".div__form");
 const footerSection = document.querySelector(".section__footer");
 const footerHeart = document.querySelector(".footer_heart");
-const passEye = document.querySelectorAll("#passEye");
+// const passEye = document.querySelectorAll("#passEye");
+const passEye1 = document.querySelector("#passEye1");
+const passEye2 = document.querySelector("#passEye2");
+const passWord = document.querySelectorAll(".password-div");
 const inputAlert = document.querySelector(".input-alert");
 const paragraphAlert = document.createElement("p");
 
@@ -138,13 +141,18 @@ const swiper = new Swiper(".swiper", {
 });
 
 /* -------------------- FORM ---------------------- */
-for (let i = 0; i < passEye.length; i++) {
-  passEye[i].addEventListener("click", () => {
-    passEye[i].classList.toggle("fa-eye");
-    pass1.toggleAttribute("type");
-    console.log("clicked");
-  });
-}
+
+passEye1.addEventListener("click", () => {
+  passEye1.classList.toggle("fa-eye");
+  const type = pass1.getAttribute("type") === "password" ? "text" : "password";
+  pass1.setAttribute("type", type);
+});
+passEye2.addEventListener("click", () => {
+  passEye2.classList.toggle("fa-eye");
+  const type2 = pass2.getAttribute("type") === "password" ? "text" : "password";
+  pass2.setAttribute("type", type2);
+});
+
 const alertMessage = () => {
   if (fName.value.trim() === "") {
     inputAlert.classList.remove("input-alert");
@@ -160,10 +168,14 @@ const alertMessage = () => {
   });
 };
 
-pass2.addEventListener("keyup", () => {
-  pass1.value === pass2.value && pass1.value !== ""
-    ? (pass2.style.outline = "2px solid green")
-    : (pass2.style.outline = "2px solid white");
+const checkPassword = () => {
+  pass1.value === pass2.value ? console.log("👌") : console.log("❌");
+};
+
+pass1.addEventListener("keyup", () => {
+  if (pass2.value.length != 0) checkPassword();
+
+  pass2.addEventListener("keyup", checkPassword);
 });
 
 const clearInput = () => {
