@@ -16,12 +16,13 @@ const formSection = document.querySelector(".section__form");
 const formDiv = document.querySelector(".div__form");
 const footerSection = document.querySelector(".section__footer");
 const footerHeart = document.querySelector(".footer_heart");
-// const passEye = document.querySelectorAll("#passEye");
 const passEye1 = document.querySelector("#passEye1");
 const passEye2 = document.querySelector("#passEye2");
 const passWord = document.querySelectorAll(".password-div");
 const inputAlert = document.querySelector(".input-alert");
+const inputAlertPassword = document.querySelector(".input-alert-password");
 const paragraphAlert = document.createElement("p");
+const paragraphAlertPassword = document.createElement("p");
 
 /* ---------- DARK/LIGHT MODE ------------ */
 
@@ -153,17 +154,37 @@ passEye2.addEventListener("click", () => {
   pass2.setAttribute("type", type2);
 });
 
-const alertMessage = () => {
+const alertMessageNickname = () => {
   if (fName.value.trim() === "") {
     inputAlert.classList.remove("input-alert");
     paragraphAlert.classList.add("alert-paragraph");
     paragraphAlert.textContent = "Fillout your nickname";
     inputAlert.append(paragraphAlert);
-    console.log("Empty");
+    console.log("Empty nickname");
   }
   fName.addEventListener("keyup", () => {
     if (fName.value.trim() !== "") {
       inputAlert.classList.add("input-alert");
+    }
+  });
+};
+
+const alertMessagePassword = () => {
+  if (pass1.value.trim() === "" || pass2.value.trim() === "") {
+    inputAlertPassword.classList.remove("input-alert-password");
+    paragraphAlertPassword.classList.add("alert-paragraph-password");
+    paragraphAlertPassword.textContent = "Fillout your password";
+    inputAlertPassword.append(paragraphAlertPassword);
+    console.log("Empty password");
+  }
+  pass1.addEventListener("keyup", () => {
+    if (pass1.value.trim() !== "") {
+      inputAlertPassword.classList.add("input-alert-password");
+    }
+  });
+  pass2.addEventListener("keyup", () => {
+    if (pass2.value.trim() !== "") {
+      inputAlertPassword.classList.add("input-alert-password");
     }
   });
 };
@@ -186,6 +207,7 @@ const clearInput = () => {
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  alertMessage();
+  alertMessageNickname();
+  alertMessagePassword();
   clearInput();
 });
