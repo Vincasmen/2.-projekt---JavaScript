@@ -23,6 +23,8 @@ const inputAlert = document.querySelector(".input-alert");
 const inputAlertPassword = document.querySelector(".input-alert-password");
 const paragraphAlert = document.createElement("p");
 const paragraphAlertPassword = document.createElement("p");
+const modalDiv = document.querySelector(".modal-div");
+const modalParagraph = document.createElement("p");
 
 /* ---------- DARK/LIGHT MODE ------------ */
 
@@ -204,9 +206,13 @@ const clearInput = () => {
   pass1.value = "";
   pass2.value = "";
 };
-
+const modalName = () => {
+  modalParagraph.textContent = "Welcome " + fName.value + ".";
+  modalDiv.append(modalParagraph);
+};
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
+  modalName(e);
   alertMessageNickname();
   alertMessagePassword();
   clearInput();
