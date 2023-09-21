@@ -25,6 +25,7 @@ const paragraphAlert = document.createElement("p");
 const paragraphAlertPassword = document.createElement("p");
 const modalDiv = document.querySelector(".modal-div");
 const modalParagraph = document.createElement("p");
+const xBtn = document.querySelector(".fa-times");
 
 /* ---------- DARK/LIGHT MODE ------------ */
 
@@ -207,8 +208,15 @@ const clearInput = () => {
   pass2.value = "";
 };
 const modalName = () => {
-  modalParagraph.textContent = "Welcome " + fName.value + ".";
-  modalDiv.append(modalParagraph);
+  if (fName.value.trim() !== "") {
+    modalParagraph.textContent = "Welcome " + fName.value + ".";
+    modalDiv.append(modalParagraph);
+    modalParagraph.classList.add("modal-paragraph");
+    modalDiv.style.display = "block";
+    xBtn.addEventListener("click", () => {
+      modalDiv.style.display = "none";
+    });
+  }
 };
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
