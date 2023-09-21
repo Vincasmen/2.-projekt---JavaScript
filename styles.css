@@ -276,6 +276,7 @@ section p {
 /* ?--------------- FORM SECTION -------------------- */
 
 .section__form {
+  position: relative;
   background-color: rgb(219, 43, 57);
   color: white;
   padding: 2rem 0rem;
@@ -381,20 +382,27 @@ input::placeholder {
 }
 
 .modal-div {
-  background-color: #d8dbe0;
-  width: fit-content;
-  height: fit-content;
-  /* left: 50%; */
-  margin: 0 auto;
-  padding: 3rem;
+  position: absolute;
+  display: none;
+  left: 50%;
   top: 50%;
-  bottom: 50%;
-  position: relative;
+  transform: translate(-50%, 0);
+  background-color: #d8dbe0;
+  border-radius: 10px;
+}
+
+.fa-times {
   color: #28292c;
-  font-weight: bold;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  cursor: pointer;
 }
 
 .modal-paragraph {
+  margin: 0 auto;
+  color: #28292c;
+  text-align: center;
 }
 
 /* ?--------------- FOOTER SECTION -------------------- */
