@@ -20,6 +20,10 @@
     margin-bottom: 10px;
   }
 
+  /* nav li {
+    margin-right: 20px;
+  } */
+
   .menu-icon {
     display: block;
     color: white;
@@ -40,6 +44,7 @@
 
   nav li {
     background-color: transparent;
+    margin-right: 20px;
   }
 }
 
@@ -48,6 +53,10 @@
 @media (min-width: 768px) {
   .intro_heading_div {
     width: 60vw;
+  }
+
+  nav li {
+    margin-right: 20px;
   }
 
   .swiper {

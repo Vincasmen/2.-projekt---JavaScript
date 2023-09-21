@@ -207,6 +207,13 @@ const clearInput = () => {
   pass1.value = "";
   pass2.value = "";
 };
+
+const divTimeout = () => {
+  setTimeout(() => {
+    modalDiv.style.display = "none";
+  }, 3000);
+};
+
 const modalName = () => {
   if (fName.value.trim() !== "") {
     modalParagraph.textContent = "Welcome " + fName.value + ".";
@@ -216,6 +223,7 @@ const modalName = () => {
     xBtn.addEventListener("click", () => {
       modalDiv.style.display = "none";
     });
+    divTimeout();
   }
 };
 submitBtn.addEventListener("click", (e) => {
