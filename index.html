@@ -24,8 +24,8 @@
     <!-- ?--------------- MENU/HEADER SECTION -------------------- -->
 
     <header id="header">
-      <div class="logo__wrapper">
-        <img src="assets/logo_black.jpg" alt="" />
+      <div class="logo__wrapper text-shadow-pop-left">
+        <p>AA</p>
       </div>
       <div class="toggle-switch">
         <label class="switch-label">
@@ -33,7 +33,7 @@
           <span class="slider"></span>
         </label>
       </div>
-      <nav id="nav">
+      <nav class="slide-in-right" id="nav">
         <ul id="ul">
           <li><a id="li" href="#">Home</a></li>
           <li><a id="li" href="#about__section">About</a></li>
@@ -43,7 +43,6 @@
       </nav>
       <div class="menu-icon">
         <i class="fas fa-bars"></i>
-        <!-- <i class="fas fa-times"></i> -->
       </div>
     </header>
 
@@ -55,7 +54,7 @@
           <source src="/assets/upravene video.mp4" />
         </video>
       </div>
-      <div class="intro_heading_div">
+      <div class="intro_heading_div text-focus-in">
         <h1>Administrate All</h1>
         <h2>One tool for Administrating All your projects</h2>
       </div>
@@ -111,8 +110,8 @@
     <!-- ?--------------- FORM SECTION -------------------- -->
 
     <form id="section__form" class="section__form">
-      <h2>Log-in form</h2>
       <div class="div__form">
+        <h2>Log-in form</h2>
         <input
           type="text"
           placeholder="Nickname"
@@ -146,7 +145,12 @@
         </div>
         <div class="input-alert-password"></div>
 
-        <input type="submit" id="submitBtn" class="submitBtn" value="Submit" />
+        <input
+          type="submit"
+          id="submitBtn"
+          class="submitBtn jello-horizontal"
+          value="Submit"
+        />
       </div>
       <div class="modal-div"><i class="fas fa-times"></i></div>
     </form>
@@ -160,7 +164,9 @@
         target="_blank"
         href="https://github.com/Vincasmen"
         >Designed & Built with
-        <span class="footer_heart"> <i class="fa-solid fa-heart"></i></span>
+        <span class="footer_heart">
+          <i class="fa-solid fa-heart heartbeat"></i
+        ></span>
         by Jan Vincourek
       </a>
     </section>
