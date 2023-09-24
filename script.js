@@ -195,7 +195,6 @@ const alertMessageNickname = () => {
     paragraphAlert.classList.add("alert-paragraph");
     paragraphAlert.textContent = "Fillout your nickname";
     inputAlert.append(paragraphAlert);
-    console.log("Empty nickname");
   }
   fName.addEventListener("keyup", () => {
     if (fName.value.trim() !== "") {
@@ -204,14 +203,16 @@ const alertMessageNickname = () => {
   });
 };
 
+// CHECKING IF PASSWORD FIELD IS EMPTY
+
 const alertMessagePassword = () => {
   if (pass1.value.trim() === "" || pass2.value.trim() === "") {
     inputAlertPassword.classList.remove("input-alert-password");
     paragraphAlertPassword.classList.add("alert-paragraph-password");
     paragraphAlertPassword.textContent = "Fillout your password";
     inputAlertPassword.append(paragraphAlertPassword);
-    console.log("Empty password");
   }
+
   pass1.addEventListener("keyup", () => {
     if (pass1.value.trim() !== "") {
       inputAlertPassword.classList.add("input-alert-password");
@@ -224,12 +225,31 @@ const alertMessagePassword = () => {
   });
 };
 
+// CHECKING IF PASSWORD INPUTS ARE MATCHING
+
+// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 const checkPassword = () => {
-  pass1.value === pass2.value ? console.log("👌") : console.log("❌");
+  pass2.value === pass1.value
+    ? (pass2.style.border = "2px solid green")
+    : (pass2.style.border = "2px solid red");
 };
 
+pass2.addEventListener("keyup", () => {
+  if (pass2.value.trim() !== "") {
+    checkPassword();
+  }
+
+  pass1.addEventListener("keyup", checkPassword());
+});
 pass1.addEventListener("keyup", () => {
-  if (pass2.value.length != 0) checkPassword();
+  if (pass1.value.trim() !== "") {
+    checkPassword();
+  }
 
   pass2.addEventListener("keyup", checkPassword());
 });
@@ -238,7 +258,17 @@ const clearInput = () => {
   fName.value = "";
   pass1.value = "";
   pass2.value = "";
+  pass2.style.border = "none";
+
+  pass2.classList.contains("light-neumorphism-form")
+    ? pass2.classList.add("border-light")
+    : pass2.classList.add("border-dark");
 };
+// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 const divTimeout = () => {
   setTimeout(() => {
