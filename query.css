@@ -20,10 +20,6 @@
     margin-bottom: 10px;
   }
 
-  /* nav li {
-    margin-right: 20px;
-  } */
-
   .menu-icon {
     display: block;
     color: white;
@@ -72,7 +68,6 @@
   }
 
   .about__section__wrapper {
-    /* width: 60vw; */
     margin: 0 auto;
   }
 
@@ -88,14 +83,11 @@
 
   .section__gallery {
     position: relative;
-    /* height: 100vh; */
-    width: 100vw;
     background-color: rgb(21, 21, 21);
     padding: 2rem 0rem;
   }
 
   .swiper {
-    margin-left: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -141,8 +133,6 @@
     flex-basis: 20rem;
     flex-shrink: 1;
     flex-grow: 1;
-    /* margin: 0 auto;
-    justify-content: center; */
   }
 
   .section__gallery img {
