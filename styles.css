@@ -106,8 +106,8 @@ header {
   padding-left: 1rem;
 }
 
-.logo__wrapper p {
-  font-size: 50px;
+.logo__wrapper a {
+  font-size: 45px;
 }
 
 .text-shadow-pop-left {
@@ -296,12 +296,13 @@ a {
 
 .menu-icon {
   display: none;
-  margin-right: 30px;
+  margin-right: 2rem;
 }
 
 /* ?--------------- HERO SECTION -------------------- */
 
 .hero__section {
+  padding-top: 9vh;
   height: 100vh;
 }
 
@@ -406,11 +407,11 @@ section p {
   position: relative;
   height: 100vh;
   background-color: rgb(21, 21, 21);
-  padding: 2rem 0rem;
+  padding: 2rem 1rem;
 }
 
 .swiper {
-  margin-left: 0;
+  margin-left: 0 !important;
   position: absolute;
   top: 50%;
   left: 50%;
