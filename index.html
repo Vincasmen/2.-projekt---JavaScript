@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="query.css" />
-    <link rel="stylesheet" href="light-mode.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="/styles/query.css" />
+    <link rel="stylesheet" href="/styles/light-mode.css" />
+    <link rel="stylesheet" href="/styles/animations.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,8 +25,8 @@
     <!-- ?--------------- MENU/HEADER SECTION -------------------- -->
 
     <header id="header">
-      <div class="logo__wrapper text-shadow-pop-left">
-        <a href="#">AA</a>
+      <div class="logo__wrapper">
+        <a class="text-shadow-pop-left flicker-4" href="#">AA</a>
       </div>
       <div class="toggle-switch">
         <label class="switch-label">
@@ -113,6 +114,7 @@
       <div class="div__form">
         <h2>Log-in form</h2>
         <input
+          class="input"
           type="text"
           placeholder="Nickname"
           id="fname"
@@ -123,6 +125,7 @@
         <div class="input-alert"></div>
         <div class="password1_container">
           <input
+            class="input"
             type="password"
             placeholder="Password"
             id="passw1"
@@ -134,6 +137,7 @@
         </div>
         <div class="password2_container">
           <input
+            class="input"
             type="password"
             placeholder="Password again"
             id="passw2"
@@ -148,7 +152,7 @@
         <input
           type="submit"
           id="submitBtn"
-          class="submitBtn jello-horizontal"
+          class="submitBtn pulsate-bck"
           value="Submit"
         />
       </div>

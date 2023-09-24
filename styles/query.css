@@ -66,6 +66,7 @@
   .about__section__wrapper {
     width: 60vw;
     margin: 0 auto;
+    padding: 1.5rem;
   }
 
   .gallery_wrapper {
@@ -114,6 +115,10 @@
     padding: 2rem;
     border: 1px solid white;
     border-radius: 5px;
+  }
+
+  .submitBtn {
+    margin: 1rem 0rem;
   }
 }
 
@@ -191,7 +196,6 @@
   }
 
   .div__form {
-    height: 50vh;
     width: 30vw;
     gap: 2rem;
   }

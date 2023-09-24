@@ -1,0 +1,33 @@
+/* ?--------------- MENU/HEADER SECTION -------------------- */
+
+.light {
+  background-color: #d8dbe0 !important;
+  color: black;
+}
+
+.light-neumorphism {
+  border-radius: 5px;
+  /* padding: 0.5rem; */
+  color: rgb(21, 21, 21);
+  border: 1px solid rgb(21, 21, 21);
+  /* background-color: #d8dbe0; */
+}
+.light-neumorphism-form {
+  color: rgb(21, 21, 21);
+  border-radius: 5px;
+  background-color: rgb(215, 218, 223);
+  border: 1px solid rgb(21, 21, 21);
+  outline: none;
+}
+
+.light-footer_heart {
+  color: black;
+}
+
+.light-placeholder::-webkit-input-placeholder {
+  color: rgb(21, 21, 21);
+}
+.light-mask {
+  filter: grayscale(100%);
+  transition: all 0.5s ease-in-out;
+}

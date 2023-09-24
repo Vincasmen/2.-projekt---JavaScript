@@ -5,9 +5,11 @@ const scrollBtn = document.createElement("button");
 const header = document.querySelector("#header");
 const nav = document.querySelector("#nav");
 const list = document.querySelectorAll("a");
+const overlay = document.querySelector(".mask");
 const fName = document.querySelector("#fname");
 const pass1 = document.querySelector("#passw1");
 const pass2 = document.querySelector("#passw2");
+const inputs = document.querySelectorAll(".input");
 const submitBtn = document.querySelector("#submitBtn");
 const slider = document.querySelector(".checkbox");
 const aboutSection = document.querySelector(".about__section");
@@ -37,11 +39,19 @@ const menuLoop = () => {
   }
 };
 
+const inputLoop = () => {
+  for (let i = 0; i < inputs.length; i++) {
+    inputs[i].classList.toggle("light-placeholder");
+  }
+};
+
 slider.addEventListener("change", () => {
   hamburgerIcon.classList.toggle("light");
 
   header.classList.toggle("light");
   nav.classList.toggle("light");
+  header.style.borderBottom = "1px solid #151515";
+  overlay.classList.toggle("light-mask");
   aboutSection.classList.toggle("light");
   aboutSectionWrapper.classList.toggle("light-neumorphism");
   formSection.classList.toggle("light");
@@ -49,9 +59,11 @@ slider.addEventListener("change", () => {
   fName.classList.toggle("light-neumorphism-form");
   pass1.classList.toggle("light-neumorphism-form");
   pass2.classList.toggle("light-neumorphism-form");
-  submitBtn.classList.toggle("light-neumorphism");
-  footerSection.classList.toggle("light-neumorphism");
+  submitBtn.classList.toggle("light-neumorphism-form");
+  footerSection.classList.toggle("light");
+  footerSection.style.borderTop = "1px solid #151515";
   footerHeart.classList.toggle("light-footer_heart");
+  inputLoop();
   menuLoop();
 });
 
