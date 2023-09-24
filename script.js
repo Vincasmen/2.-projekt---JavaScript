@@ -63,8 +63,8 @@ slider.addEventListener("change", () => {
   footerSection.classList.toggle("light");
   footerSection.style.borderTop = "1px solid #151515";
   footerHeart.classList.toggle("light-footer_heart");
-  paragraphAlertPassword.style.color = "rgb(21, 21, 21)";
-  paragraphAlert.style.color = "rgb(21, 21, 21)";
+  paragraphAlertPassword.classList.toggle("light-footer_heart");
+  paragraphAlert.classList.toggle("light-footer_heart");
   inputLoop();
   menuLoop();
 });
@@ -240,11 +240,11 @@ const clearInput = () => {
   pass2.value = "";
 };
 
-// const divTimeout = () => {
-//   setTimeout(() => {
-//     modalDiv.style.display = "none";
-//   }, 3000);
-// };
+const divTimeout = () => {
+  setTimeout(() => {
+    modalDiv.style.display = "none";
+  }, 3000);
+};
 
 const modalName = () => {
   if (fName.value.trim() !== "") {
