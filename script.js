@@ -63,6 +63,8 @@ slider.addEventListener("change", () => {
   footerSection.classList.toggle("light");
   footerSection.style.borderTop = "1px solid #151515";
   footerHeart.classList.toggle("light-footer_heart");
+  paragraphAlertPassword.style.color = "rgb(21, 21, 21)";
+  paragraphAlert.style.color = "rgb(21, 21, 21)";
   inputLoop();
   menuLoop();
 });
@@ -229,7 +231,7 @@ const checkPassword = () => {
 pass1.addEventListener("keyup", () => {
   if (pass2.value.length != 0) checkPassword();
 
-  pass2.addEventListener("keyup", checkPassword);
+  pass2.addEventListener("keyup", checkPassword());
 });
 
 const clearInput = () => {
@@ -238,15 +240,15 @@ const clearInput = () => {
   pass2.value = "";
 };
 
-const divTimeout = () => {
-  setTimeout(() => {
-    modalDiv.style.display = "none";
-  }, 3000);
-};
+// const divTimeout = () => {
+//   setTimeout(() => {
+//     modalDiv.style.display = "none";
+//   }, 3000);
+// };
 
 const modalName = () => {
   if (fName.value.trim() !== "") {
-    modalParagraph.textContent = "Welcome " + fName.value + ".";
+    modalParagraph.textContent = "Welcome " + fName.value;
     modalDiv.append(modalParagraph);
     modalParagraph.classList.add("modal-paragraph");
     modalDiv.style.display = "block";

@@ -440,11 +440,13 @@ input::placeholder {
   top: 50%;
   min-width: 15rem;
   min-height: 5rem;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
   background-color: #d8dbe0;
   border-radius: 10px;
-  padding: 0.5rem;
+  /* padding: 2rem; */
   animation: fadeIn ease 0.5s;
+  border: 1px solid rgb(21, 21, 21);
+  overflow: hidden;
 }
 
 .fa-times {
@@ -456,8 +458,8 @@ input::placeholder {
 }
 
 .modal-paragraph {
-  position: inherit;
   margin: 0 auto;
+  padding: 2rem;
   color: #28292c;
   text-align: center;
 }
