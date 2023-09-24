@@ -69,6 +69,10 @@ h6 {
 
 /* ?--------------- MENU/HEADER SECTION -------------------- */
 
+.snap {
+  scroll-snap-align: start;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -87,7 +91,6 @@ h6 {
 }
 
 header {
-  scroll-snap-align: start;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -300,7 +303,6 @@ a {
 
 .hero__section {
   height: 100vh;
-  scroll-snap-align: start;
 }
 
 .mask {
@@ -368,7 +370,6 @@ a {
 .about__section {
   display: block;
   position: relative;
-  scroll-snap-align: start;
   height: 100vh;
   text-align: center;
   padding: 1rem;
@@ -403,7 +404,6 @@ section p {
 
 .section__gallery {
   position: relative;
-  scroll-snap-align: start;
   height: 100vh;
   background-color: rgb(21, 21, 21);
   padding: 2rem 0rem;
@@ -447,7 +447,6 @@ section p {
 /* ?--------------- FORM SECTION -------------------- */
 
 .section__form {
-  scroll-snap-align: start;
   height: 90vh;
   position: relative;
   background-color: rgb(219, 43, 57);

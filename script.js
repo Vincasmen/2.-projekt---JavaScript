@@ -13,6 +13,8 @@ const slider = document.querySelector(".checkbox");
 const aboutSection = document.querySelector(".about__section");
 const aboutSectionWrapper = document.querySelector(".about__section__wrapper2");
 const formSection = document.querySelector(".section__form");
+const gallerySection = document.querySelector(".section__gallery");
+const heroSection = document.querySelector(".hero__section");
 const formDiv = document.querySelector(".div__form");
 const footerSection = document.querySelector(".section__footer");
 const footerHeart = document.querySelector(".footer_heart");
@@ -81,6 +83,15 @@ document.addEventListener("click", (e) => {
 
 /* ---------- SCROLL TO TOP BUTTON ------------ */
 
+const scrollTimeout = () => {
+  setTimeout(() => {
+    formSection.classList.add("snap");
+    gallerySection.classList.add("snap");
+    aboutSection.classList.add("snap");
+    heroSection.classList.add("snap");
+  }, 500);
+};
+
 const scrollTop = function () {
   scrollBtn.innerHTML = "&uarr;";
   scrollBtn.setAttribute("id", "scroll-btn");
@@ -95,9 +106,15 @@ window.addEventListener("scroll", scrollBtnDisplay);
 const scrollWindow = function () {
   if (window.scrollY != 0) {
     setTimeout(function () {
-      window.scrollTo(0, window.scrollY - 50);
+      window.scrollTo(0, window.scrollY - 100);
       scrollWindow();
     }, 10);
+    formSection.classList.remove("snap");
+    gallerySection.classList.remove("snap");
+    aboutSection.classList.remove("snap");
+    heroSection.classList.remove("snap");
+
+    scrollTimeout();
   }
 };
 scrollBtn.addEventListener("click", scrollWindow);
