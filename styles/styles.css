@@ -210,10 +210,23 @@ a {
 }
 
 .mask {
-  background-color: rgba(0, 0, 0, 0.676);
+  background-color: rgba(0, 0, 0, 0.34);
+}
+
+.image__section {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .video__section {
+  display: none;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
