@@ -125,6 +125,14 @@
 /* !---- MONITOR VIEW min-width: 1024px ----------- */
 
 @media (min-width: 1024px) {
+  .image__section {
+    display: none;
+  }
+
+  .video__section {
+    display: block;
+  }
+
   .about__section__wrapper {
     width: 30rem;
   }
