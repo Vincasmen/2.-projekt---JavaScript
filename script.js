@@ -254,15 +254,23 @@ pass1.addEventListener("keyup", () => {
   pass2.addEventListener("keyup", checkPassword());
 });
 
+const clearStyles = () => {
+  if (pass2.classList.contains("light-neumorphism-form")) {
+    pass2.style.border = "1px solid black";
+    // pass2.classList.add("border-dark");
+  }
+};
+
 const clearInput = () => {
   fName.value = "";
   pass1.value = "";
   pass2.value = "";
-  pass2.style.border = "none";
+  clearStyles();
+  // pass1.removeAttribute("style");
 
-  pass2.classList.contains("light-neumorphism-form")
-    ? pass2.classList.add("border-light")
-    : pass2.classList.add("border-dark");
+  // pass2.classList.contains("light-neumorphism-form")
+  //   ? pass2.classList.add("border-light")
+  //   : pass2.classList.add("border-dark");
 };
 // DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
