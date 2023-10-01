@@ -227,12 +227,6 @@ const alertMessagePassword = () => {
 
 // CHECKING IF PASSWORD INPUTS ARE MATCHING
 
-// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 const checkPassword = () => {
   pass2.value === pass1.value
     ? (pass2.style.border = "2px solid green")
@@ -257,8 +251,10 @@ pass1.addEventListener("keyup", () => {
 const clearStyles = () => {
   if (pass2.classList.contains("light-neumorphism-form")) {
     pass2.style.border = "1px solid black";
-    // pass2.classList.add("border-dark");
+  } else if (!pass2.classList.contains("light-neumorphism-form")) {
+    pass2.style.border = "1px solid white";
   }
+  pass2.removeAttribute("style");
 };
 
 const clearInput = () => {
@@ -266,17 +262,7 @@ const clearInput = () => {
   pass1.value = "";
   pass2.value = "";
   clearStyles();
-  // pass1.removeAttribute("style");
-
-  // pass2.classList.contains("light-neumorphism-form")
-  //   ? pass2.classList.add("border-light")
-  //   : pass2.classList.add("border-dark");
 };
-// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// DODĚLAT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 const divTimeout = () => {
   setTimeout(() => {
