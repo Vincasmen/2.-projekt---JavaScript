@@ -270,17 +270,11 @@ const divTimeout = () => {
   }, 3000);
 };
 
-// const passFilled = () => {};
-
 const modalName = () => {
   if (fName.value.trim() === "") {
-    console.log("Eventuality 1");
   } else if (pass1.value.trim() === "") {
-    console.log("Eventuality 2");
   } else if (pass2.value.trim() === "") {
-    console.log("Eventuality 3");
   } else {
-    console.log("Eventuality 4");
     modalParagraph.textContent = "Welcome " + fName.value;
     modalDiv.append(modalParagraph);
     modalParagraph.classList.add("modal-paragraph");
