@@ -1,8 +1,53 @@
 /* ?--------------- MENU/HEADER SECTION -------------------- */
 
+body.dark {
+  color: rgb(21, 21, 21);
+  background-color: #d8dbe0;
+}
+
+body.dark header div a {
+  color: rgb(21, 21, 21);
+  /* background-color: #d8dbe0; */
+}
+body.dark nav ul {
+  color: rgb(21, 21, 21);
+  background-color: #d8dbe0;
+}
+body.dark #li {
+  color: rgb(21, 21, 21);
+}
+
+body.dark .mask {
+  filter: grayscale(70%);
+  transition: all 0.5s ease-in-out;
+}
+
+body.dark #about__section {
+  background-color: #d8dbe0;
+  color: rgb(21, 21, 21);
+}
+body.dark #section__form {
+  background-color: #d8dbe0;
+  color: rgb(21, 21, 21);
+}
+body.dark .div__form {
+  border: 1px solid rgb(21, 21, 21);
+}
+body.dark form input {
+  background-color: #d8dbe0;
+  color: rgb(21, 21, 21);
+  border: 1px solid rgb(21, 21, 21);
+}
+body.dark form input::-webkit-input-placeholder {
+  color: rgb(21, 21, 21);
+}
+body.dark form .input-alert {
+  color: rgb(21, 21, 21);
+}
+
 .light {
   background-color: #d8dbe0 !important;
-  color: black;
+  color: rgb(21, 21, 21);
 }
 
 .light-neumorphism {
@@ -21,15 +66,11 @@
 }
 
 .light-footer_heart {
-  color: black;
+  color: rgb(21, 21, 21);
 }
 
 .light-placeholder::-webkit-input-placeholder {
   color: rgb(21, 21, 21);
-}
-.light-mask {
-  filter: grayscale(70%);
-  transition: all 0.5s ease-in-out;
 }
 
 .border-dark {

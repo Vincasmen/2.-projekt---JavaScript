@@ -25,12 +25,12 @@ const passEye2 = document.querySelector("#passEye2");
 const passWord = document.querySelectorAll(".password-div");
 const inputAlert = document.querySelector(".input-alert");
 const inputAlertPassword = document.querySelector(".input-alert-password");
-const paragraphAlert = document.createElement("p");
+const paragraphAlertNickname = document.createElement("p");
 const paragraphAlertPassword = document.createElement("p");
 const modalDiv = document.querySelector(".modal-div");
 const modalParagraph = document.createElement("p");
 const xBtn = document.querySelector(".fa-times");
-
+const body = document.querySelector("body");
 /* ---------- DARK/LIGHT MODE ------------ */
 
 const menuLoop = () => {
@@ -46,27 +46,28 @@ const inputLoop = () => {
 };
 
 slider.addEventListener("change", () => {
-  hamburgerIcon.classList.toggle("light");
-
+  document.body.classList.toggle("dark");
+  // body.classList.toggle("dark");
+  // hamburgerIcon.classList.toggle("light");
   header.classList.toggle("light");
-  nav.classList.toggle("light");
-  header.style.borderBottom = "1px solid #151515";
-  overlay.classList.toggle("light-mask");
-  aboutSection.classList.toggle("light");
-  aboutSectionWrapper.classList.toggle("light-neumorphism");
-  formSection.classList.toggle("light");
-  formDiv.classList.toggle("light-neumorphism");
-  fName.classList.toggle("light-neumorphism-form");
-  pass1.classList.toggle("light-neumorphism-form");
-  pass2.classList.toggle("light-neumorphism-form");
-  submitBtn.classList.toggle("light-neumorphism-form");
-  footerSection.classList.toggle("light");
-  footerSection.style.borderTop = "1px solid #151515";
-  footerHeart.classList.toggle("light-footer_heart");
-  paragraphAlertPassword.classList.toggle("light-footer_heart");
-  paragraphAlert.classList.toggle("light-footer_heart");
-  inputLoop();
-  menuLoop();
+  // nav.classList.toggle("light");
+  // header.style.borderBottom = "1px solid #151515";
+  // overlay.classList.toggle("light-mask");
+  // aboutSection.classList.toggle("light");
+  // aboutSectionWrapper.classList.toggle("light-neumorphism");
+  // formSection.classList.toggle("light");
+  // formDiv.classList.toggle("light-neumorphism");
+  // fName.classList.toggle("light-neumorphism-form");
+  // pass1.classList.toggle("light-neumorphism-form");
+  // pass2.classList.toggle("light-neumorphism-form");
+  // submitBtn.classList.toggle("light-neumorphism-form");
+  // footerSection.classList.toggle("light");
+  // footerSection.style.borderTop = "1px solid #151515";
+  // footerHeart.classList.toggle("light-footer_heart");
+  // paragraphAlertPassword.classList.toggle("light-footer_heart");
+  paragraphAlertNickname.classList.toggle("light-footer_heart");
+  // inputLoop();
+  // menuLoop();
 });
 
 /* ---------- NAV BAR COLOR TRANSITION ------------ */
@@ -192,9 +193,9 @@ passEye2.addEventListener("click", () => {
 const alertMessageNickname = () => {
   if (fName.value.trim() === "") {
     inputAlert.classList.remove("input-alert");
-    paragraphAlert.classList.add("alert-paragraph");
-    paragraphAlert.textContent = "Fillout your nickname";
-    inputAlert.append(paragraphAlert);
+    paragraphAlertNickname.classList.add("alert-paragraph");
+    paragraphAlertNickname.textContent = "Fillout your nickname";
+    inputAlert.append(paragraphAlertNickname);
   }
   fName.addEventListener("keyup", () => {
     if (fName.value.trim() !== "") {
