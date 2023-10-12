@@ -408,7 +408,7 @@ form input {
 }
 
 input::placeholder {
-  color: rgba(255, 255, 255, 0.685);
+  color: rgba(255, 255, 255, 0.807);
   text-align: left;
 }
 
@@ -445,6 +445,7 @@ input::placeholder {
 }
 
 .modal-div {
+  color: rgb(255, 0, 0);
   position: absolute;
   display: none;
   left: 50%;
@@ -452,15 +453,15 @@ input::placeholder {
   min-width: 15rem;
   min-height: 5rem;
   transform: translate(-50%, -50%);
-  background-color: #d8dbe0;
+  background-color: rgb(14, 28, 54);
   border-radius: 10px;
   animation: fadeIn ease 0.5s;
-  border: 1.5px solid rgb(21, 21, 21);
+  border: 1px solid white;
   overflow: hidden;
 }
 
 .fa-times {
-  color: #28292c;
+  color: #ffffff;
   position: absolute;
   right: 5%;
   top: 5%;
@@ -470,7 +471,7 @@ input::placeholder {
 .modal-paragraph {
   margin: 0 auto;
   padding: 2rem;
-  color: #28292c;
+  color: #ffffff;
   text-align: center;
 }
 

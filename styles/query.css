@@ -74,9 +74,10 @@
   }
 
   .swiper-slide {
+    padding: 1rem;
     border-radius: 10px;
-    background: #151515;
-    box-shadow: 9px 9px 18px #080808, -9px -9px 18px #222222;
+    /* background: #151515; */
+    /* box-s: 5px 5px 10px #080808, -5px -5px 10px #222222; */
   }
 
   .section__gallery {

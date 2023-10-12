@@ -33,41 +33,13 @@ const xBtn = document.querySelector(".fa-times");
 const body = document.querySelector("body");
 /* ---------- DARK/LIGHT MODE ------------ */
 
-const menuLoop = () => {
-  for (let i = 0; i < list.length; i++) {
-    list[i].classList.toggle("light");
-  }
-};
-
-const inputLoop = () => {
-  for (let i = 0; i < inputs.length; i++) {
-    inputs[i].classList.toggle("light-placeholder");
-  }
-};
-
 slider.addEventListener("change", () => {
   document.body.classList.toggle("dark");
-  // body.classList.toggle("dark");
-  // hamburgerIcon.classList.toggle("light");
-  header.classList.toggle("light");
-  // nav.classList.toggle("light");
-  // header.style.borderBottom = "1px solid #151515";
-  // overlay.classList.toggle("light-mask");
-  // aboutSection.classList.toggle("light");
-  // aboutSectionWrapper.classList.toggle("light-neumorphism");
-  // formSection.classList.toggle("light");
-  // formDiv.classList.toggle("light-neumorphism");
-  // fName.classList.toggle("light-neumorphism-form");
-  // pass1.classList.toggle("light-neumorphism-form");
-  // pass2.classList.toggle("light-neumorphism-form");
-  // submitBtn.classList.toggle("light-neumorphism-form");
-  // footerSection.classList.toggle("light");
-  // footerSection.style.borderTop = "1px solid #151515";
-  // footerHeart.classList.toggle("light-footer_heart");
-  // paragraphAlertPassword.classList.toggle("light-footer_heart");
-  paragraphAlertNickname.classList.toggle("light-footer_heart");
-  // inputLoop();
-  // menuLoop();
+  header.classList.toggle("dark_header");
+  nav.classList.toggle("dark_header");
+
+  paragraphAlertPassword.classList.toggle("dark_alert");
+  paragraphAlertNickname.classList.toggle("dark_alert");
 });
 
 /* ---------- NAV BAR COLOR TRANSITION ------------ */

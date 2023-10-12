@@ -7,7 +7,6 @@ body.dark {
 
 body.dark header div a {
   color: rgb(21, 21, 21);
-  /* background-color: #d8dbe0; */
 }
 body.dark nav ul {
   color: rgb(21, 21, 21);
@@ -26,6 +25,16 @@ body.dark #about__section {
   background-color: #d8dbe0;
   color: rgb(21, 21, 21);
 }
+
+body.dark #section__gallery {
+  background-color: #d8dbe0;
+  border-top: 1px solid rgb(21, 21, 21);
+  border-bottom: 1px solid rgb(21, 21, 21);
+}
+body.dark .swiper-pagination .swiper-pagination-bullet {
+  background-color: rgb(21, 21, 21);
+}
+
 body.dark #section__form {
   background-color: #d8dbe0;
   color: rgb(21, 21, 21);
@@ -45,37 +54,34 @@ body.dark form .input-alert {
   color: rgb(21, 21, 21);
 }
 
-.light {
+body.dark .section__footer {
+  background-color: #d8dbe0;
+  border-top: 1px solid black;
+  color: rgb(21, 21, 21);
+}
+body.dark .section__footer a {
+  color: rgb(21, 21, 21);
+}
+body.dark .section__footer i {
+  color: rgb(21, 21, 21);
+}
+
+body.dark .modal-div {
+  background-color: #d8dbe0;
+  border: 1px solid rgb(21, 21, 21);
+}
+body.dark .modal-paragraph {
+  color: rgb(21, 21, 21);
+}
+body.dark i {
+  color: rgb(21, 21, 21);
+}
+
+.dark_header {
   background-color: #d8dbe0 !important;
   color: rgb(21, 21, 21);
 }
 
-.light-neumorphism {
-  border-radius: 5px;
-  /* padding: 0.5rem; */
+.dark_alert {
   color: rgb(21, 21, 21);
-  border: 1px solid rgb(21, 21, 21);
-  /* background-color: #d8dbe0; */
-}
-.light-neumorphism-form {
-  color: rgb(21, 21, 21);
-  border-radius: 5px;
-  background-color: rgb(215, 218, 223);
-  border: 1px solid rgb(21, 21, 21);
-  outline: none;
-}
-
-.light-footer_heart {
-  color: rgb(21, 21, 21);
-}
-
-.light-placeholder::-webkit-input-placeholder {
-  color: rgb(21, 21, 21);
-}
-
-.border-dark {
-  border: 1px solid black;
-}
-.border-light {
-  border: 1px solid white;
 }
